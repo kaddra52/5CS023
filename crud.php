@@ -20,7 +20,6 @@ $acknowledgment_message_style = "display:none;";
         $password = md5(sha1($password));
         $user_type = $_POST["user_type"];
         $phone = $_POST["phone"];
-        //$phone2 = $phone;
         $sql_insert = "INSERT INTO tb_users(username, password, name, user_type, phone) VALUES('".$username."', '".$password."', '".$name."', '".$user_type."', '".$phone."')";		
         $result = $conn->query($sql_insert);
         $acknowledgment_message_style = "display:block;";

@@ -100,9 +100,12 @@ include('db_con.php');
 			    	$title = $row["title"];					
 					  $property_type = $row["property_type"];					
 					  $bedrooms = $row["bedrooms"];
+            $bathrooms = $row["bathrooms"];
 					  $address = $row["address"];					 
             $price = $row["price"];					 
-            $details = $row["details"];			
+            $details = $row["details"];		
+            $area = $row["area"];		
+            $category = $row["category"];		
             $image = $row["image"];			
         ?>
           <section class="section">
@@ -131,6 +134,24 @@ include('db_con.php');
                         <label class="col-sm-4 col-form-label">Number of Bedrooms:</label>
                         <div class="col-sm-8 col-form-label">
                           <strong><?=$bedrooms?></strong>
+                        </div>
+                      </div>
+                      <div class="row mb-4">
+                        <label class="col-sm-4 col-form-label">Number of Baths:</label>
+                        <div class="col-sm-8 col-form-label">
+                          <strong><?=$bathrooms?></strong>
+                        </div>
+                      </div>
+                      <div class="row mb-4">
+                        <label class="col-sm-4 col-form-label">Area:</label>
+                        <div class="col-sm-8 col-form-label">
+                          <strong><?=$area?></strong>
+                        </div>
+                      </div>
+                      <div class="row mb-4">
+                        <label class="col-sm-4 col-form-label">Category:</label>
+                        <div class="col-sm-8 col-form-label">
+                          <strong><?=$category?></strong>
                         </div>
                       </div>
                       <div class="row mb-4">

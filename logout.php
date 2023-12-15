@@ -5,6 +5,6 @@ session_destroy();
 session_write_close();
 setcookie(session_name(),'',0,'/');
 session_regenerate_id(true);
-header("Location: index.php?validation=1");
+header("Location: login.php?validation=1");
 die();
 ?>
